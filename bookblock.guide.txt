@@ -1,0 +1,78 @@
+1. Heading area in HTML. There are 3 style sheets for this bookblock.
+	<link rel="stylesheet" type="text/css" href="css/jquery.jscrollpane.custom.css" />
+	<link rel="stylesheet" type="text/css" href="css/bookblock.css" />
+	<link rel="stylesheet" type="text/css" href="css/custom.css" />
+	<script src="js/modernizr.custom.79639.js"></script>
+2. Body area
+   2.1	<div id="container" class="container">	is the top level of div. It contains 2 div classes
+
+		2.1.1	<div class="menu-panel"> This div class contains list as the following examples.
+
+					<h3>Table of Contents</h3>
+					<ul id="menu-toc" class="menu-toc">
+						<li class="menu-toc-current"><a href="#item1">Self-destruction</a></li>
+						<li><a href="#item2">Why we die</a></li>
+						<li><a href="#item3">The honeymoon</a></li>
+						<li><a href="#item4">A drawing joke</a></li>
+						<li><a href="#item5">Commencing practice</a></li>
+					</ul>
+
+					<div>		This div is not related to bookblock, it is just another link on the left side on the menu 
+						<a href="http://tympanus.net/Development/AudioPlayer/">&larr; Previous Demo: Responsive Audio Player</a>
+						<a href="http://tympanus.net/codrops/?p=12795">Back to the Codrops Article</a>
+					</div>
+				</div>
+
+		2.2.2 	<div class="bb-custom-wrapper"> consists of 3 sections, "div", "nav", "span". Their ids should be as in examples.
+
+					<div id="bb-bookblock" class="bb-bookblock">
+
+						<div class="bb-item" id="item1">
+							<div class="content">
+								<div class="scroller">
+									<h2>Self-destruction</h2>
+									<p>The Hon. Francis Gillette, in a speech in Hartford, Conn., in 1871, said
+									that there was "in Connecticut, on an average, one liquor shop to every
+									save them.'"</p>
+									...
+						<div class="bb-item" id="item2">
+							<div class="content">
+								<div class="scroller">
+									<h2>Why we die</h2>
+									<p>But few of the human race die of old age. Besides the thousand and one
+									fretting that wears out the machinery; friction, not the real wear."</p>
+									...
+						<div class="bb-item" id="item3"> ...
+									...
+					</div>
+
+					<nav>
+						<span id="bb-nav-prev">&larr;</span>
+						<span id="bb-nav-next">&rarr;</span>
+					</nav>
+
+					<span id="tblcontents" class="menu-button">Table of Contents</span>
+
+			</div>
+
+	2.2 Script areas for this project. It must have Page.init() to initialize the bookblock.
+
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+		<script src="js/jquery.mousewheel.js"></script>
+		<script src="js/jquery.jscrollpane.min.js"></script>
+		<script src="js/jquerypp.custom.js"></script>
+		<script src="js/jquery.bookblock.js"></script>
+		<script src="js/page.js"></script>
+		<script>
+			$(function() {
+
+				Page.init();
+
+			});
+		</script>
+
+			
+
+
+
+
